@@ -206,7 +206,8 @@ $(document).ready(function(){
 
     //centerthat();
     centerthat(function(){
-        showHome();
+        //showHome();
+        showPencilSharpener();
     });
 
     // disable touch scrolling unless explicitly allowed
@@ -307,11 +308,24 @@ $(document).ready(function(){
     });
 
     var armRotate = $("#pencilsharpener .overlay").hammer();
-    var other = false
+    var other = false;
+    var move_count = 0;
+    var last_direction = "";
     armRotate.on("drag", function(e) {
         if( other ) {
-            console.log( e.gesture.direction, e.gesture.distance );
+            console.log( e.gesture.direction );
             
+            // last_direction = e.gesture.direction;
+            // if( last_direction != e.gesture.direction ) {
+            //     move_count = 0;
+            // }
+            move_count++;
+            if( move_count > 60 ) {
+                move_count = 0;
+                console.log("awesome");
+                $("#footer .score").text(++count);
+            }
+
             var offset = psarm.offset();
 
             var center_x = (offset.left) + (psarm.width() / 2);
@@ -321,9 +335,6 @@ $(document).ready(function(){
             var radians = Math.atan2(mouse_x - center_x, mouse_y - center_y);
             var degree = (radians * (180 / Math.PI) * -1);
             
-            console.log( degree );
-            
-            console.log(  );
             if( $(window).height() < 920 ) {
                 psarm.css('-moz-transform', 'scale(.8) rotate(' + degree + 'deg)');
                 psarm.css('-webkit-transform', 'scale(.8) rotate(' + degree + 'deg)');
@@ -339,6 +350,8 @@ $(document).ready(function(){
         } else {
             other = !other;
         }
+    }).on("dragend", function(e) {
+        move_count = 0;
     });
 
     $("#freestyle .startscreen").click(function(){
