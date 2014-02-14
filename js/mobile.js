@@ -206,8 +206,7 @@ $(document).ready(function(){
 
     //centerthat();
     centerthat(function(){
-        //showHome();
-        showPencilSharpener();
+        showHome();
     });
 
     // disable touch scrolling unless explicitly allowed
@@ -310,15 +309,8 @@ $(document).ready(function(){
     var armRotate = $("#pencilsharpener .overlay").hammer();
     var other = false;
     var move_count = 0;
-    var last_direction = "";
     armRotate.on("drag", function(e) {
-        if( other ) {
-            console.log( e.gesture.direction );
-            
-            // last_direction = e.gesture.direction;
-            // if( last_direction != e.gesture.direction ) {
-            //     move_count = 0;
-            // }
+        if( other ) {            
             move_count++;
             if( move_count > 60 ) {
                 move_count = 0;
