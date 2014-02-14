@@ -1,0 +1,117 @@
+/*
+	GLOBAL
+*/
+
+body, html { width: 100%; height: 100%; overflow: hidden; }
+
+
+
+* { outline: none; -webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+img { display: block; }
+
+/*
+	WRAPPER
+*/
+
+#wrapper { width: 100%; height: 100%; /*background-color: #D4EEF6;*/
+	background: -webkit-linear-gradient(#CCEBF5, #E6F5FB); /* For Safari */
+	background: -o-linear-gradient(#CCEBF5, #E6F5FB); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#CCEBF5, #E6F5FB); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#CCEBF5, #E6F5FB); /* Standard syntax */
+}
+
+/*
+	HOME
+*/
+
+#home { width: 100%; height: 100%; padding-top: 75px; display: none; opacity: 0; }
+#home .twitter { width: 55px; height: 45px; background: url("../img/twitter.png"); position: absolute; top: 30px; left: 23px; }
+#home .facebook { width: 22px; height: 45px; background: url("../img/facebook.png"); position: absolute; top: 30px; left: 110px; background-size: 100% 100%; }
+#home .logo { height: 23%; margin: 0 auto; margin-bottom: 50px; }
+#home .trainyourtongue { height: 38%; margin: 0 auto; }
+#home .start { width: 224px; height: 87px; position: absolute; bottom: 55px; left: 0px; background: url("../img/startBackground.png") top left no-repeat; }
+
+/*
+	HOWTO
+*/
+
+#howto { width: 100%; height: 100%; padding-top: 30px; display: none; opacity: 0; }
+#howto .title { margin: 0 auto; margin-bottom: 80px; }
+#howto .instructions { height: 45%; margin: 0 auto; }
+#howto .lickheretobegin { width: 554px; height: 87px; position: absolute; bottom: 60px; left: 0px; background: url("../img/lickHereBackground.gif") top left no-repeat; z-index: 1; }
+#howto .overlay { width: 100%; height: 140px; position: absolute; bottom: 35px; left: 0px; z-index: 10;  }
+
+/*
+	MENU
+*/
+
+#menu { width: 100%; height: 100%; padding-top: 53px; display: none; opacity: 0; }
+#menu #levels { width: 100%; height: 65%; overflow: scroll; -webkit-overflow-scrolling: touch; }
+#menu .title { margin: 0 auto; margin-bottom: 50px; }
+#menu .pencilsharpener { margin: 0 auto; margin-bottom: 64px; }
+#menu .lightswitch { margin: 0 auto; margin-bottom: 85px; }
+#menu .freestyle { margin: 0 auto; margin-bottom: 20px; }
+
+/*
+	LIGHT SWITCH
+*/
+
+#lightswitch { position: relative; width: 100%; height: 100%; display: none; opacity: 0; }
+#lightswitch .on, #lightswitch .off { margin: 0 auto; height: 75%; }
+#lightswitch .off { display: none; }
+#lightswitch .overlay { position: absolute; top: 0px; left: 0px; z-index: 10; width: 100%; height: 100%; background: black; opacity: .6; display: none; }
+#lightswitch .startscreen { position: absolute; top: 0px; left: 0px; z-index: 10; width: 100%; height: 100%; background: rgba(207,236,247,.73); }
+#lightswitch .startscreen img { margin: 0 auto; height: 48%; }
+
+/*
+	PENCIL SHARPENER
+*/
+
+#pencilsharpener { position: relative; width: 100%; height: 100%; display: none; opacity: 0; }
+#pencilsharpener .psbody { width: 482px; height: 680px; position: absolute; top: 0px; left: 0px; z-index: 10; }
+#pencilsharpener .psarm { width: 497px; height: 497px; position: absolute; top: 0px; left: 0px; z-index: 100; }
+#pencilsharpener .overlay { width: 100%; height: 700px; position: absolute; top: 0px; left: 0px; z-index: 1000; }
+#pencilsharpener .startscreen { position: absolute; top: 0px; left: 0px; z-index: 1000; width: 100%; height: 100%; background: rgba(207,236,247,.73); }
+#pencilsharpener .startscreen img { margin: 0 auto; height: 42%; }
+
+/*
+	FREESTYLE
+*/
+
+#freestyle { position: relative; width: 100%; height: 100%; display: none; opacity: 0; }
+#freestyle .startscreen { position: absolute; top: 0px; left: 0px; z-index: 10; width: 100%; height: 100%; background: rgba(207,236,247,.73); }
+#freestyle .startscreen img { margin: 0 auto; height: 48%; }
+
+/*
+	FOOTER
+*/
+
+#footer { width: 100%; height: 111px; position: fixed; bottom: -111px; left: 0px; background: #EC3267; z-index: 1000; }
+#footer .menulink { width: 100px; height: 111px; position: absolute; top: 0px; left: 0px; background: url("../img/menuButton.png") top left no-repeat; }
+#footer .score { margin: 0 auto; text-align: center; font: bold 88px Helvetica; color: #FFF9D7; padding-top: 2px; display: none; }
+#footer .nextlink { width: 100px; height: 111px; position: absolute; top: 0px; right: 0px; background: url("../img/nextButton.png") top left no-repeat; }
+
+@media only screen and ( max-height: 745px ) {
+	#home { padding-top: 65px; }
+	#home .logo { margin-bottom: 40px; }
+
+	#howto .instructions { height: 45%; margin: 0 auto; }
+
+	#lightswitch .startscreen img { margin: 0 auto; height: 53%; }
+	#pencilsharpener .startscreen img { margin: 0 auto; height: 50%; }
+	#freestyle .startscreen img { margin: 0 auto; height: 55%; }
+
+	#pencilsharpener .psbody { width: 482px; height: 680px; position: absolute; top: 0px; left: 0px; z-index: 10; -webkit-transform: scale(.8); }
+	#pencilsharpener .psarm { width: 497px; height: 497px; position: absolute; top: 0px; left: 0px; z-index: 100; -webkit-transform: scale(.8); }
+
+	#howto .lickheretobegin { width: 554px; height: 87px; position: absolute; bottom: 40px; left: 0px; background: url("../img/lickHereBackground.gif") top left no-repeat; }
+	#home .start { width: 224px; height: 87px; position: absolute; bottom: 40px; left: 0px; background: url("../img/startBackground.png") top left no-repeat; }
+}

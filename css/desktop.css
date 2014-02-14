@@ -1,0 +1,21 @@
+/*
+	GLOBAL
+*/
+
+body, html { width: 100%; height: 100%; overflow: hidden; }
+
+img { display: block; }
+
+/*
+	WRAPPER
+*/
+
+#wrapper { width: 100%; height: 100%; background-color: #CCEBF5; opacity: 0; }
+#wrapper .gif { margin: 0 auto; height: 80%; }
+
+#twitter { position: absolute; top: 20px; left: 50px; }
+#twitter:hover{ opacity: .6; }
+#facebook { position: absolute; top: 18px; left: 100px; }
+#facebook:hover{ opacity: .6; }
+#cst { position: absolute; top: 18px; left: 20px; }
+#cst:hover{ opacity: .6; }
