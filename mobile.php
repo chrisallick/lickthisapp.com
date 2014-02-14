@@ -17,7 +17,7 @@
         <meta name="twitter:creator" value="@chrisallick">
         <meta name="twitter:url" content="http://lickthisapp.com">
         <meta name="twitter:domain" content="http://lickthisapp.com">
-        <meta name="twitter:title" content="">
+        <meta name="twitter:title" content="Lick.">
         <meta name="twitter:description" content="Give your lady what she really wants for Valentine’s Day. Train your tongue with Lick.">
         <meta name="twitter:image" content="http://lickthisapp.com/img/sharethis.png">
 
@@ -42,6 +42,19 @@
         </script>
     </head>
     <body>
+        <!--
+            Chris Allick
+            Pablo Rochat
+
+            http://clubsexytime.com/
+
+
+            Justin Ralph 
+
+            http://justinstuartralph.com/
+            
+            8==D ~~ :)
+        -->
         <div id="wrapper">
             <div id="home">
                 <a class="facebook" href="#" onclick="
