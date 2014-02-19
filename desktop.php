@@ -5,18 +5,20 @@
 
         <title>Lick</title>
 
+        <meta name="description" content="Train your tongue on your phone. http://lickthisapp.com">
+
         <meta property="og:title" content="Train your tongue with Lick." />
         <meta property="og:type" content="article" />
         <meta property="og:image" content="http://lickthisapp.com/img/sharethis.png" />
         <meta property="og:url" content="http://lickthisapp.com" />
-        <meta property="og:description" content="Give your lady what she really wants for Valentine’s Day. Train your tongue with Lick. http://lickthisapp.com" />
+        <meta property="og:description" content="Train your tongue on your phone. http://lickthisapp.com" />
 
         <meta name="twitter:card" value="summary">
         <meta name="twitter:creator" value="@chrisallick">
         <meta name="twitter:url" content="http://lickthisapp.com">
         <meta name="twitter:domain" content="http://lickthisapp.com">
         <meta name="twitter:title" content="">
-        <meta name="twitter:description" content="Give your lady what she really wants for Valentine’s Day. Train your tongue with Lick.">
+        <meta name="twitter:description" content="Train your tongue on your phone. http://lickthisapp.com">
         <meta name="twitter:image" content="http://lickthisapp.com/img/twitter_sharethis.png">
 
         <link href='./css/reset.css' media='all' rel='stylesheet' type='text/css' />
@@ -40,7 +42,7 @@
     </head>
     <body>
         <div id="wrapper">
-            <a id="twitter" href="javascript:(function(){window.twttr=window.twttr||{};var D=550,A=450,C=screen.height,B=screen.width,H=Math.round((B/2)-(D/2)),G=0,F=document,E;if(C>A){G=Math.round((C/2)-(A/2))}window.twttr.shareWin=window.open('https://twitter.com/intent/tweet?text=Give your lady what she really wants for Valentine’s Day. Train your tongue with Lick. lickthisapp.com','','left='+H+',top='+G+',width='+D+',height='+A+',personalbar=0,toolbar=0,scrollbars=1,resizable=1');E=F.createElement('script');E.src='http://platform.twitter.com/widgets.js';F.getElementsByTagName('head')[0].appendChild(E)}());"><img width="50%" src="./img/twitter_desktop.png" /></a>
+            <a id="twitter" href="javascript:(function(){window.twttr=window.twttr||{};var D=550,A=450,C=screen.height,B=screen.width,H=Math.round((B/2)-(D/2)),G=0,F=document,E;if(C>A){G=Math.round((C/2)-(A/2))}window.twttr.shareWin=window.open('https://twitter.com/intent/tweet?text=Train your tongue on your phone. lickthisapp.com','','left='+H+',top='+G+',width='+D+',height='+A+',personalbar=0,toolbar=0,scrollbars=1,resizable=1');E=F.createElement('script');E.src='http://platform.twitter.com/widgets.js';F.getElementsByTagName('head')[0].appendChild(E)}());"><img width="50%" src="./img/twitter_desktop.png" /></a>
             <a id="facebook" href="#" onclick="
                 window.open(
                   'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('http://lickthisapp.com'), 
